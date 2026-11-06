@@ -2,7 +2,7 @@ name: Collect LG temperatures
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '30 * * * *'
 permissions:
   contents: read
 concurrency:
