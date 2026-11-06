@@ -1,0 +1,6 @@
+[project]
+name = "household-lg"
+version = "0.1.0"
+description = "Read-only LG ThinQ data collection skeleton"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.28,<1", "python-dotenv>=1,<2", "streamlit>=1.40,<2", "pandas>=2.2,<3", "altair>=5,<7"]

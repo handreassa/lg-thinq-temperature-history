@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+
+device_names.json
+
+schema.sql
+
+schemas/
+
+migrations/
