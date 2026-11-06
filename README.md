@@ -168,7 +168,7 @@ Names apply to historical readings in the dashboard without modifying the databa
 
 ## Scheduled collection with GitHub Actions
 
-The included `.github/workflows/collect.yml` runs every 30 minutes, at minutes **7 and 37**
+The included `.github/workflows/collect.yml` runs every 30 minutes, at minutes **00 and 30**
 each hour and supports manual runs through **Run workflow**.
 
 1. Push the source and `uv.lock` to the default branch.
