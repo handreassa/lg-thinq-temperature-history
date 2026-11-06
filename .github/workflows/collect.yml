@@ -23,6 +23,6 @@ jobs:
           LG_REGION: ${{ vars.LG_REGION || 'aic' }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          WEATHER_LOCATION: ${{ vars.WEATHER_LOCATION }}
-          WEATHER_LATITUDE: ${{ vars.WEATHER_LATITUDE }}
-          WEATHER_LONGITUDE: ${{ vars.WEATHER_LONGITUDE }}
+          WEATHER_LOCATION: ${{ secrets.WEATHER_LOCATION || vars.WEATHER_LOCATION }}
+          WEATHER_LATITUDE: ${{ secrets.WEATHER_LATITUDE || vars.WEATHER_LATITUDE }}
+          WEATHER_LONGITUDE: ${{ secrets.WEATHER_LONGITUDE || vars.WEATHER_LONGITUDE }}

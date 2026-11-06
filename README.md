@@ -174,7 +174,7 @@ each hour and supports manual runs through **Run workflow**.
 1. Push the source and `uv.lock` to the default branch.
 2. Add repository Actions secrets: `LG_ACCESS_TOKEN`, `SUPABASE_URL`, and `SUPABASE_SECRET_KEY`.
 3. Optionally add repository variables `LG_COUNTRY` and `LG_REGION` (defaults: `BR` / `aic`).
-4. For weather, add `WEATHER_LOCATION`, `WEATHER_LATITUDE`, and `WEATHER_LONGITUDE` as repository variables.
+4. For weather, add `WEATHER_LOCATION`, `WEATHER_LATITUDE`, and `WEATHER_LONGITUDE` as repository secrets or variables. Secrets take priority when both exist.
 5. Trigger a manual run and confirm readings appear in Supabase.
 
 No `.env` file is needed in Actions. Schedules are best effort and can be delayed or
